@@ -1,6 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import logo from './assets/logo-gabia.svg'
+import google from './assets/icon_google.svg'
+import naver from './assets/icon_naver.svg'
+import kakao from './assets/icon_kakao.svg'
 import './App.css'
 
 function App() {
@@ -11,7 +13,7 @@ function App() {
       
     <div className="wrap">
 
-      <h1><img src="/logo-gabia.svg" alt="가비아" /></h1>
+      <h1><img src={logo} alt="가비아" /></h1>
       <p>맞춤형 정보 제공을 위해 로그인이 필요합니다.</p>
       
       <form action="">
@@ -29,9 +31,9 @@ function App() {
 
         <div className='sns-list'>
           <ul>
-            <li><a href="#"><img src="/icon_google.svg" alt="구글 로그인" /><p>구글 로그인</p></a></li>
-            <li><a href="#"><img src="/icon_naver.svg" alt="네이버 로그인" /><p>네이버 로그인</p></a></li>
-            <li><a href="#"><img src="/icon_kakao.svg" alt="카카오 로그인" /><p>카카오 로그인</p></a></li>
+            <li><a href="#"><img src={google} alt="구글 로그인" /><p>구글 로그인</p></a></li>
+            <li><a href="#"><img src={naver} alt="네이버 로그인" /><p>네이버 로그인</p></a></li>
+            <li><a href="#"><img src={kakao} alt="카카오 로그인" /><p>카카오 로그인</p></a></li>
           </ul>
         </div> {/* sns-list */}
 
